@@ -1,6 +1,10 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Source Code Pro', monospace;
 font-family: 'Source Sans Pro', sans-serif; */
+#site{
+    color:rgb(255, 255, 255);
+    background-color: rgb(12, 9, 10);
+}
 #header,#navbar{
     font-family:'Oswald', sans-serif;
 }
