@@ -1,16 +1,165 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Source Code Pro', monospace;
-font-family: 'Source Sans Pro', sans-serif; */
-#site{
+font-family: 'Source Sans Pro', sans-serif; 
+rgb(255, 32, 110) (Rose)
+rgb(251, 255, 18) (Yellow)
+rgb(65, 234, 212) (Turquoise)*/
+body{
     color:rgb(255, 255, 255);
     background-color: rgb(12, 9, 10);
 }
-#header,#navbar{
+#header,#navbar,h2,h3{
     font-family:'Oswald', sans-serif;
+    text-align: center;
 }
-#content{
-    font-family: 'Source Sans Pro', sans-serif;
+#navbar{
+    padding:3%;
+}
+h1{
+    font-size: 300%;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.subheading1{
+    color:rgb(255, 32, 110);
+}
+.subheading2{
+    color:rgb(251, 255, 18);
+}
+.subheading3{
+    color:rgb(65, 234, 212);
+}
+.subsubheading1{
+    text-align: left;
+    color:rgb(255, 32, 110);
+}
+.subsubheading2{
+    text-align: left;
+    color:rgb(251, 255, 18);
+}
+.subsubheading3{
+    text-align: left;
+    color:rgb(65, 234, 212);
+}
+.media{
+    justify-content:center;
+    padding:3%;
+    margin:3%;
+    background-color: rgb(31, 31, 31);
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+.socialsdiv{
+    display:flex;
+    vertical-align: center;
+}
+.socialsdiv>p{
+    padding-left: 20px;
+    font-size: larger;
+}
+a:hover{
+    color:rgb(255, 32, 110);
+}
+.socialmedia{
+    width:50px;
+    height:50px;
+    padding:10px;
+}
+.image{
+    width:450px;
+    height:auto;
+    padding: 10px;
+    display:flex;
+}
+.button{
+    margin:auto;
+    padding: 15px 30px;
+    transition-duration: 400ms;
+    background-color: rgb(12, 9, 10);
+    border:2px solid rgb(255, 255, 255);
+}
+#home:hover{
+    background-color: rgb(255, 32, 110);
+    color: rgb(12, 9, 10);
+    border-color:rgb(255, 32, 110);
+}
+#homeActive{
+    background-color: rgb(255, 32, 110);
+    color: rgb(12, 9, 10);
+    border-color:rgb(255, 32, 110);
+}
+#about:hover{
+    background-color: rgb(251, 255, 18);
+    color: rgb(12, 9, 10);
+    border-color:rgb(251, 255, 18);
+}
+#aboutActive{
+    background-color: rgb(251, 255, 18);
+    color: rgb(12, 9, 10);
+    border-color:rgb(251, 255, 18);
+}
+#contact:hover{
+    background-color: rgb(65, 234, 212);
+    color: rgb(12, 9, 10);
+    border-color:rgb(65, 234, 212);
+}
+#contactActive{
+    background-color: rgb(65, 234, 212);
+    color: rgb(12, 9, 10);
+    border-color:rgb(65, 234, 212);
 }
 #footer{
     font-family: 'Source Code Pro', monospace; 
+    text-align:center;
+    font-size: smaller;
+    margin:3%;
+}
+
+@media only screen and (min-width: 800px) {
+    #site{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto;
+    }
+    #header{
+        grid-column: 1/6;
+    }
+    nav{
+        grid-column: 1/2;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12,1fr);
+        gap: 15px;
+    }
+    .button{
+        margin:0%;
+        text-align: left;
+    }
+    #home,#homeActive{
+        grid-row: 2/3;
+    }
+    #about,#aboutActive{
+        grid-row: 3/4;
+    }
+    #contact,#contactActive{
+        grid-row: 4/5;
+    }
+    .media{
+        grid-column: 2/6;
+    }
+    #twocol{
+        grid-column: 2/6;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #media1{
+        grid-column: 1/2;
+    }
+    #media2{
+        grid-column: 2/3;
+    } 
+    #footer{
+        grid-column: 2/6;
+    }
 }
